@@ -1,0 +1,20 @@
+{
+  "name": "max-media-engine",
+  "version": "1.0.0",
+  "description": "Fixed-width parsers for MAX media 210/211 and 212/213 plus batch reconciliation",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "report": "tsx src/cli.ts --transactions fixtures/media_210.txt --summaries fixtures/media_212.txt",
+    "report:json": "tsx src/cli.ts --transactions fixtures/media_210.txt --summaries fixtures/media_212.txt --json",
+    "fixtures": "tsx src/fixtures.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}

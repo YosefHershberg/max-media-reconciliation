@@ -1,0 +1,5 @@
+node_modules/
+
+# generated reconciliation reports (npm run report:json) — keep the dir, ignore its contents
+reports/*
+!reports/.gitkeep
